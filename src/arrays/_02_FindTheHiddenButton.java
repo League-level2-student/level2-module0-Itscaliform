@@ -20,7 +20,7 @@ public class _02_FindTheHiddenButton implements ActionListener{
 	JPanel panel;
 	
 	//1. create an array of JButtons. Don't initialize it yet.
-	
+	JButton[] rob= new JButton[6];
 	//2 create an int variable called hiddenButton
 	
 	public static void main(String[] args) {
@@ -36,8 +36,11 @@ public class _02_FindTheHiddenButton implements ActionListener{
 		String f=JOptionPane.showInputDialog(null,"Give me a positive number");
 		int n= Integer.parseInt(f);
 		//4. Initialize the array of JButtons to be the size of the int created in step 3
-		String[] JButtons= new String[5];
+		String[] JButtons= new String[11];
 		//5. Make a for loop to iterate through the JButton array
+		for (int i = 0; i < JButtons.length; i++) {
+			JButtons[i] = new JButton();
+		}
 			//6. initialize each JButton in the array
 			//7. add the ActionListener to each JButton
 			//8. add each JButton to the panel
